@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная №3 — A-Frame</title>
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <!-- Куб -->
+        <a-box
+            position="-1 0.5 -3"
+            rotation="0 45 0"
+            color="#4CC3D9">
+        </a-box>
+
+        <!-- Сфера -->
+        <a-sphere
+            position="0 1.25 -5"
+            radius="1.25"
+            color="#EF2D5E">
+        </a-sphere>
+
+        
+        <!-- Изменённый цилиндр -->
+        <a-cylinder
+            position="2 1 -4"
+            radius="0.7"
+            height="2"
+            color="#FF8C00">
+        </a-cylinder>
+
+        
+        <!-- Новый объект: конус -->
+        <a-cone
+            position="-2 1 -4"
+            radius-bottom="0.8"
+            radius-top="0"
+            height="2"
+            color="#32CD32">
+        </a-cone>
+
+
+        <!-- Поверхность -->
+        <a-plane
+            position="0 0 -4"
+            rotation="-90 0 0"
+            width="4"
+            height="4"
+            color="#7BC8A4">
+        </a-plane>
+
+        <!-- Фон -->
+        <a-sky color="#ECECEC"></a-sky>
+
+    </a-scene>
+</body>
+</html>
